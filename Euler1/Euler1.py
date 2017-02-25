@@ -19,13 +19,6 @@ def multiple(x,y):
 		i += 1
 	else:
 		ySum = (sum(yList))
-#	i = 1
-#	z = 15
-#	while i*z < 1000:
-#		zList.insert(i - 1, i*z)
-#		i += 1
-#	else:
-#		zSum = (sum(zList))
 	print (xSum + ySum)
 multiple(3,5)
 
