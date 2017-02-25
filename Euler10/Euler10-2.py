@@ -1,3 +1,7 @@
+# Failed attempt at the Sieve of Erastosthenes.
+# Takes about 6 seconds to calculate primes under 10,000 (does not solve problem)
+
+
 import time
 
 start = time.time()
@@ -17,13 +21,6 @@ def main(end_num):
             sum += prime
             prime += 1
             print(prime)
-        '''for y in range(0,len(primes)): #If the "prime" is divisible by any previous prime, prime += 1, otherwise add prime and continue
-            if prime % primes[y] == 0:
-                break
-            if y == len(primes)-1:
-                primes.append(prime)
-                sum += prime
-                break'''
         prime += 1
     print(primes)
     print(prime)
