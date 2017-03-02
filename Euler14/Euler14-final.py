@@ -1,3 +1,4 @@
+# ~44 seconds
 import time
 
 start = time.time()
