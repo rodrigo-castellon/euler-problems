@@ -24,6 +24,7 @@ def findmax(number_of_divisors): #Find the first triangle number that has a grea
     else:
         print("Final answer is: " + str(jj) + " with " + str(num_divisible((jj*(jj+1)/2))) + " numbers in the sequence")
 
+findmax(500)
 
 elapsed = (time.time() - start)
 
