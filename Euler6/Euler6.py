@@ -1,3 +1,7 @@
+#~0.0002 seconds
+import time
+start = time.time()
+
 def main(num):
     orig_list = [y for y in range(1,num + 1)]
     square_list = []
@@ -7,6 +11,10 @@ def main(num):
         square_list.insert(ii,square)
         ii += 1
     print(square_list)
-    print(sum(square_list) - ((sum(orig_list)**2)))
+    print(abs(sum(square_list) - ((sum(orig_list)**2))))
 
 main(100)
+
+elapsed = time.time() - start
+
+print("%s found in %s seconds" % ("products",elapsed))
