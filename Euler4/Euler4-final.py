@@ -1,4 +1,7 @@
-#Is a 4, 5, or 6-digit number a palindrome?
+#0.0003 seconds
+import time
+start = time.time()
+
 def ispalindrome(palindrome):
     i = 0
     length = len(str(palindrome))
@@ -21,6 +24,7 @@ def main(three_digit_one, three_digit_two, i, j):
         if ispalindrome((three_digit_one - i)*(three_digit_two - j)):
             print(three_digit_one - i)
             print(three_digit_two - j)
+            print("Product: %s" % ((three_digit_one-i)*(three_digit_two-j)))
             break
         i -= 1
     else:
@@ -28,4 +32,6 @@ def main(three_digit_one, three_digit_two, i, j):
             main(three_digit_one,three_digit_two, 9, j-1)
         else:
             print("no palindrome in this range")
-main(999,999, 99, 99)
+print main(999,999, 99, 99)
+
+print "%s found in %s seconds" % ("products", time.time()-start)
