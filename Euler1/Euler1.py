@@ -1,3 +1,4 @@
+# for project euler
 import time
 
 start = time.time()
